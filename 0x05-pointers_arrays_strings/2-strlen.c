@@ -1,35 +1,17 @@
 #include "main.h"
 
-#include <stdio.h>
-
-
-
 /**
+ * _strlen - Returns the length of a string.
+ * @str: string.
  *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
-
-int main(void)
-
+ * Return: Length.
+ */
+size_t _strlen(const char *str)
 {
+size_t len = 0;
 
-	    char *str;
+while (*str++)
+len++;
 
-	        int len;
-
-
-
-		    str = "My first strlen!";
-
-		        len = _strlen(str);
-
-			    printf("%d\n", len);
-
-			        return (0);
-
+return (len);
 }
